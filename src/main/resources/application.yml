@@ -13,6 +13,7 @@ spring:
   cloud:
     gateway:
       routes:
+#       predicates로 들어오는 것들은 uri로 routing시키는 
         - id: product
           uri: http://localhost:8085
           predicates:
